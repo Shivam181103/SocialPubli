@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.influencer-wrapper{
+  animation: transitionIn 0.8s;
+}
+
+@keyframes transitionIn{
+  from{
+      opacity: 0;
+      transform: translateY(-10);
+  }
+
+  to{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.brighten img {
+  filter: brightness(50%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  }
+  
+  .brighten img:hover {
+  filter: brightness(100%);
+  }
+
+.text-container {
+  margin: 0 3rem;
+  margin-top: 4rem;
+}
+
+.text {
+  padding: 0 3rem 3rem 3rem;
+}
+
+.small-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  margin-bottom: 2rem;
+  
+}
+.small-heading>h6{
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 18px;
+  color: rgb(78, 78, 78);
+}
+.small-heading a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(13,110,253);
+  padding: 0.7rem 0;
+
+}
+.big-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.big-heading h1{
+  font-family: "Poppins", sans-serif;
+  font-size: 2.3rem;
+}
+.testimonial-container{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  }
+
+.testimonial-row{
+  width: 100%;
+ 
+  margin: 0;
+  display: flex;
+}
+
+.testimonial-col{
+  margin: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.big-influencer{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.big-influencer>.influencer>img{
+  width: 100%;
+  height: 50rem;
+  overflow: hidden;
+
+}
+.influencer{
+  transition: tranform 0.2s;
+}
+.influencer:hover img{
+  transform: scale(1.1);
+}
+.influencer-title{
+  position: absolute;
+  left: 3rem;
+  bottom: 2rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.small-influencer{
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+.small-influencer>.influencer>img{
+  width: 100%;
+  height: 25rem;
+}
+
+.button-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.show-more{
+  
+  height: 8rem;
+  margin: 0;
+  padding: 0 2rem;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-less{
+  
+  height: 8rem;
+  margin: 0;
+  padding: 0 2rem;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-more-btn{
+  width: 14rem;
+  height: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid black;
+}
+
+.Lets-work-together{
+  width: 100%;
+  height: 8rem;
+  color: white;
+  background-color:rgb(56, 56, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:  background-color 0.4s;
+  position: relative;
+	z-index: 10;
+}
+
+.Lets-work-together:hover{
+  background-color: #f8971d;
+  
+}
+ 
+.Lets-work-together h3:hover{
+  transform: scale(1.1);
+  transition: ease-in-out;
+}
+
+@media (max-width:760px){
+
+  .text-container{
+    padding: 0;
+    margin: 2rem;
+  }
+    .big-heading{
+      padding: 0;
+      
+    }
+     
+    .big-heading>h1{
+      font-size:1.8rem;
+    line-height: normal;
+    letter-spacing: -.25px;
+    padding-bottom: 0;
+    font-weight: 500;
+     
+    }
+   .small-heading{
+     padding: 1rem 0;
+   }
+
+   .small-heading>h6{
+     font-size: smaller;
+     font-weight:normal;
+     color: black;
+     line-height: 1.8;
+     letter-spacing: 1px;
+   }
+   
+
+   .testimonial-row{
+     
+    display: grid;
+  }
+ 
+  .testimonial-col{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+ 
+  .big-influencer{
+    width: 100%;
+    height: 100%;
+     position: relative;
+     overflow: hidden;
+  }
+  .big-influencer>.influencer>img{
+    width: 100%;
+    
+    overflow: hidden;
+  }
+  .influencer-title{
+    position: absolute;
+    left: 3rem;
+    bottom: 3rem;
+    color: white;
+  }
+  .small-influencer{
+   width: 100%;
+   height: 50%;
+   overflow: hidden;
+   position: relative;
+ }
+ 
+ .small-influencer>.influencer>img{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+ }
+ .influencer-title{
+  position: absolute;
+  left: 3rem;
+  bottom: 2rem;
+  color: white;
+  font-size: 1rem;
+}
+   .button-wrapper{
+     margin: 0 1rem;
+   }
+
+   .load-more-btn{
+     width: 6.4rem;
+     height: 2rem;
+     font-size: 0.8rem;
+
+     font-weight: 500;
+   }
+   
+}

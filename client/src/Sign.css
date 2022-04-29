@@ -1,0 +1,72 @@
+
+
+
+.sign-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.signup-logo-cont{
+    width:9rem;
+    height: 9rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: -7rem;
+    z-index: 11;
+    align-items: center;
+    box-shadow: rgb(0, 0, 0) 0px 14px 30px, rgba(0, 0, 0, 0.22) 0px 10px 12px;
+}
+.signup-logo{
+    width: 100%;
+}
+.signup-form-cont{
+    width: 25rem;
+    border: 2px solid  ;
+    border-image:   linear-gradient(to right, rgb(255, 170, 12), lightgreen);;
+    padding:2rem 1rem ;
+    margin: 2rem;
+    
+}
+.sign-up-form{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+     
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid blue;
+    margin:0.2rem   ;
+    font-size: 14px;
+}
+
+button{
+    margin: 1rem 0;
+}
+.sign-up-form>div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.next-button{
+   padding: 0 1rem ;
+   border: none;
+   border: 2px solid yellow;
+   background-color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.already-have-account{
+    border: none;
+    background-color: white;
+    border: 2px solid blue ;
+    color: blue;
+    font-size: 14px;
+}

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@500&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+
+
+.about-wrapper{
+    animation: transitionIn 0.8s;
+    margin: 2rem 0;
+  }
+  
+  @keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10);
+    }
+  
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+.about-heading{
+   padding: 4rem 0;
+}
+
+.about-heading h2{
+    text-align: center;
+    font-size:4rem;
+    margin-top: 4rem;
+    font-family: 'Lora', sans-serif;
+
+}
+
+.about-heading p{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+
+.first-heading{
+    margin-left: 12rem;
+    margin-top: 5rem;
+    font-family: 'Lora', sans-serif;
+    font-size: 4rem;
+}
+
+.first-body{
+    margin-top: 3rem;
+    text-align: center;
+    text-align: left;
+    margin-left: 12rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.first-img img{
+    width: 60%;
+    height: 65%;
+    margin-top: 5rem;
+    border-radius: 10px;
+    margin-left: 5rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0,0.1);
+}
+
+.second-heading{
+    margin-left: 5rem;
+    margin-top: 3rem;
+    font-family: 'Lora',sans-serif;
+    font-size: 4rem;
+}
+.second-body{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 5rem;
+    margin-right: 12rem;
+    text-align: center;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3rem;
+}
+
+.second-img img{
+    width: 60%;
+    height: 65%;
+    margin-top: 3.5rem;
+    border-radius: 10px;
+    margin-left: 12rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0,0.1);
+
+}
+
+.third-img img{
+    width:60%;
+    height:65%;
+    border-radius: 10px;
+    margin-left: 5rem;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0,0.1);
+}
+
+.third-body{
+    margin-left: 12rem;
+    text-align: center;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.third-heading{
+    margin-left: 12rem;
+    margin-top: 6rem;
+    font-family: 'Lora', sans-serif;
+    font-size: 4rem;
+}
+
+.typewriter-container{
+    text-align: center;
+    background-color: black;
+    padding-bottom: 3rem;
+}
+
+.typewriter-container h1{
+    font-size: 2rem;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    color: azure;
+    font-family: 'Lora', sans-serif;
+}
+
+.typewriter-text{
+    font-size: 6rem;
+    margin-top: 2rem;
+    color: azure;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+@media (max-width:760px){
+     .about-heading{
+         padding: 2rem 0;
+     }
+    .about-heading>h2{
+        font-size: 2.3rem;
+    }
+    .about-heading>p{
+        font-size: 17px;
+        color: grey;
+    }
+    .typewriter-text{
+        font-size: 12vw;
+    }
+
+    .typewriter-container h1{
+        font-size: 1.5rem;
+    }
+
+    
+.first-heading-sm{
+    margin :0;
+    padding: 3rem 3rem 0 ;
+    font-family: 'Lora', sans-serif;
+    
+}
+.first-heading-sm>h4{
+   font-size: 1.6rem;
+   font-family: 'Poppins', sans-serif;
+
+}
+.first-body-sm>p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+.first-body-sm{
+    margin-top: 3rem;
+     
+    text-align: left;
+    margin: 0;
+    padding : 1rem 3rem 0 3rem;
+     
+}
+
+.first-img-sm img{
+    width: calc(100vw - 7rem);
+    height: 65%;
+    margin: 0;
+    margin: 1rem 0 1rem 3rem;
+    border-radius: 10px;
+    
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0,0.1);
+}
+
+}
+
+@media screen and (min-device-width: 760px) and (max-device-width: 980px) { 
+ 
+    .first-heading-sm{
+        margin: 3rem 3rem 1rem 4rem;
+
+    }
+
+    .first-body-sm{
+        margin: 1rem 0 1rem 4rem;
+ 
+    }
+    .first-img-sm img{
+       
+        width: 20rem;
+    }
+    .first-img-sm{
+        display: flex;
+        align-items: center;
+        margin-right: 8rem;
+        justify-content: center; 
+    }
+ .second-body{
+     margin-right: 1rem;
+ }
+}

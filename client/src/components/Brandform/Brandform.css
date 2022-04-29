@@ -1,0 +1,184 @@
+
+.influencerPage-wrapper{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,239,132,1) 0%, rgba(247,198,169,1) 54.2%, rgba(21,186,196,1) 100.3% );
+    animation: gradient 10s ease infinite;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+ 
+.infy-heading{
+    width: 100%;
+}
+.infy-heading h1{
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 1rem;
+    font-family: 'Lora', sans-serif;
+
+}
+
+.infy-heading p{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+}
+
+.form-wrapper{
+    background-color: aquamarine;
+    margin: 0;
+   
+    border-radius: 10px;
+    padding: 5rem;
+    overflow: hidden;
+}
+
+.form-wrapper .instaId {
+    position: relative;
+    margin-top: 2rem;
+}
+
+
+.instaId input{
+    width:100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    background: transparent;
+    margin-bottom: 30px;
+    padding: 10px 0;
+}
+
+.instaId label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+    font-weight: 600;
+
+}
+
+.message-wrapper label{
+    font-weight: 600;
+    
+}
+
+.message-wrapper .message{
+    height: 10rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid black;
+    margin-top: 2rem;
+}
+
+
+
+.form-wrapper .instaId input:focus ~ label,
+.form-wrapper .instaId input:valid ~ label{
+    top: -20px;
+  left: 0;
+  color: #000;
+  font-size: 12px;
+}
+
+.form-check label{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit-button{
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    border: 1px solid  rgb(139, 230, 233);
+    outline: none;
+    background-color: rgb(95, 157, 228);
+}
+
+.submit-button .submit-link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width:760px){
+
+     .infy-heading h1{
+         font-size: 3rem;
+         text-align: center;
+     }
+     .infy-heading p{
+         font-size: 1.2rem;
+         font-weight: 500;
+         color:rgb(56, 56, 56);
+          
+        }
+        .form-wrapper{
+            width: calc( 100vw - 4rem );
+            margin: 0;
+            height: auto;
+        }
+        .infy-heading{
+            height: auto;
+            padding: 1rem 0;
+
+        }
+        .form-wrapper .instaId{
+            padding: 0;
+            margin: 0;
+            height: auto;
+        }
+
+}
+@media screen and (min-device-width: 761px) and (max-device-width: 1080px) { 
+
+    .infy-heading h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .infy-heading p{
+        font-size: 1.4rem;
+        font-weight: 500;
+        color:rgb(56, 56, 56);
+         
+       }
+       .form-wrapper{
+           width: calc( 100vw - 14rem );
+           margin: 0;
+           height: auto;
+       }
+       .infy-heading{
+           height: auto;
+           padding: 1rem 0;
+
+       }
+       .form-wrapper .instaId{
+           padding: 1rem 0;
+           margin: 1rem;
+           height: auto;
+       }
+ 
+}

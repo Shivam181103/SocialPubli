@@ -1,0 +1,173 @@
+.Indigo-container{
+    background-color: black;
+}
+
+.Indigo-img>img{
+    width: 100%;
+    position: relative;
+    padding-right: 6rem;
+    padding-bottom: 4rem;
+}
+
+.Indigo-body>h1{
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 11;
+    color: white;
+    font-size: 5rem;
+}
+
+.Indigo-body>p{
+    top: 70%;
+    left: 35%;
+    transform: translate(-28%, -50%);
+    position: absolute;
+    z-index: 11;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.Violet-container{
+    position: relative;
+}
+
+.Violet-container>img{
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: 0.9;
+}
+
+.Violet-body1{
+    position: absolute;
+    top: 20px;
+  left: 16px;
+  color: white;
+  text-align: center;
+}
+
+.Violet-body2{
+    top: 8px;
+  right: 16px;
+  position: absolute;
+  color: white;
+}
+
+
+
+
+.contactUs-container{
+    
+    margin: 0;
+    padding: 4rem 0;
+    background: url('https://images.unsplash.com/photo-1502639625928-9e0198ae7dfb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGJhY2tncm91bmR8ZW58MHwwfDB8YmxhY2t8&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    /* background-image: linear-gradient(135deg, #fad7a1 10% , #e96d71 100%); */
+}
+
+ 
+.text-cont{
+     padding: 3rem;
+}
+
+.text-cont>*{
+    padding: 2rem 0;
+    color: white;
+}
+
+ 
+.contact-type{
+     width: 100%;
+     color: white;
+     margin: 3rem 1rem ;
+      background-color: #4158D0;
+     background-image: linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+     
+     padding: 2rem 1rem ;
+     border-radius: 10px;
+     transition: transform 0.4s ;
+ }
+
+.contact-type:hover{
+    background  : linear-gradient(transparent, #4158D0);
+    transform: scale(1.1);
+    animation: 0.4s ease-out;
+    color: white;
+}
+
+ 
+.contact-type:hover button{
+    background-color: white;
+
+} 
+.contact-type:hover button>*{
+    color: black;
+} 
+.text-cont>div> h1{
+    font-size: 4rem;
+    font-family: 'Lora';
+     color: white;
+}
+.contact-type>*{
+    margin: 1rem 0;
+
+}
+ .contact-type>h1>strong{
+     font-size: 3.3rem;
+ }
+.contact-type button{
+    width: 100%;
+    height: 3.4rem;
+    border: none;
+    background-color: black;
+   border-radius: 10px;
+   margin-top: 1rem;
+   margin-bottom: -1rem;
+}
+
+ 
+  
+.contact-type button>*{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+  
+}
+
+ 
+@media (max-width:760px){
+ 
+
+    .Indigo-img>img{
+        width: auto;
+        height: 70vh;
+        padding: 3rem;
+    }
+
+    .Indigo-body{
+        text-align: center;
+        padding: 0 3rem;
+    }
+    
+    .Indigo-body>h1{
+        text-align: left;
+        font-size: 3rem;
+        color: #f8971d;
+    }
+    
+    .Indigo-body>p{
+        left: 0;
+        top: 0;
+        padding: 0 7rem;
+        text-align: left;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,266 @@
+.brands-wrapper{
+    animation: transitionIn 0.8s;
+}
+
+@keyframes transitionIn{
+    from{   
+        opacity: 0;
+        transform: translateY(-10);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.brands-heading{
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.brands-heading h2{
+    font-size: 4rem;
+    font-family: 'Lora', sans-serif;
+    margin-left:6rem;
+    margin-right:5rem;
+    padding-top: 2rem;
+}
+
+.brands-heading button{
+    border: 2px solid tomato;
+    width: 12rem;
+    height: 3rem;
+    outline: none;
+    border-radius: 10px;
+    background-color: tomato;
+    margin-top: 2rem;
+}
+
+.brands-heading .join-link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.brand-body h2{
+    padding:2rem;
+    font-size:2.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.brand-body p{
+    padding-left:2rem;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.brand-container{
+     padding: 3rem;
+}
+
+ 
+.brand-body{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.brand-body img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.brand-content{
+    background-color: blueviolet;
+    width: 70vw;
+    margin-left: 12rem;
+}
+
+.brand-collab{
+    text-align: center;
+    font-family: 'Lora', sans-serif;
+    text-transform: capitalize;
+}
+
+.brand-collab h1{
+    padding:2rem;
+}
+  
+.collab-body img{
+    width: 70%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.brand-service h1{
+    text-align: center;
+}
+
+.brand-service-container{
+    padding: 2rem;
+     
+     text-align: center;
+
+}
+
+.card{
+    width:18rem;
+    height:25rem;
+    display: flex;
+    display: inline-block;
+    margin-left:2rem;
+}
+
+.card .collab-img{
+    border-radius: 10px 10px 0 0;
+    height:30vh;
+}
+
+.card .wrap{
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+     
+}
+
+.wrap .card-text{
+    font-size: 2rem;
+}
+
+.wrap .card-info{
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Lora', sans-serif;
+}
+
+.get-start h1{
+    text-align: center;
+    padding: 3rem;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 3rem;
+
+
+}
+.get-start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.get-start img{
+    width:30%;
+    height:30%;
+     
+}
+
+.get-start .start-button{
+    outline: none;
+    border: none;
+    width: 18rem;
+    height: 3rem;
+    margin: 3rem 33rem 3rem ;
+    background-color: aquamarine;
+    border-radius: 30px;
+}
+
+.start-button .get-link{
+    text-decoration: none;
+    color:#000;
+    font-size: 1.1rem;
+    font-weight:500;
+    font-family:'Poppins', sans-serif;
+}
+
+
+@media (max-width:600px){
+
+    .brands-heading h2{
+        font-size: 2rem;
+        font-family: 'Lora', sans-serif;
+         margin: 1rem 2rem 1rem 3rem;
+        padding-top: 1rem;
+    line-height: 1.7;
+    }
+    .brand-body p{
+        padding-left:2rem;
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    .brand-body h2{
+        margin:   0;
+        padding:1rem 1rem 1rem 2rem;
+    }
+    .brand-container{
+        padding:1rem 2rem;
+   }
+
+   .brand-container img{
+       width: calc( 100vw - 4rem );
+       height: auto;
+       justify-content: center;
+       align-items: center;
+       padding:2rem;
+       
+   }
+   .collab-body img{
+       width:calc( 100vw - 2rem );
+   }
+   .brand-service-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+   .brand-service-container >div{
+       margin: 1rem;
+       padding-bottom: 1rem ;
+       text-align: center;
+      
+   }
+
+   
+.get-start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.get-start img{
+    width:50%;
+    height:50%;
+     
+}
+.get-start h1{
+    font-size: 2rem;
+    
+}
+.get-start .start-button{
+    outline: none;
+    border: none;
+    width: 15rem;
+    height: 3rem;
+    margin:1rem 3rem 4rem 3rem  ;
+    background-color: aquamarine;
+    border-radius: 30px;
+}
+
+}
+
+@media screen and (min-device-width: 761px) and (max-device-width: 960px) { 
+
+.card{
+    height: auto;
+     margin: 1rem;
+}
+}
