@@ -2,6 +2,8 @@
 const mongoose =require('mongoose')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+ 
+ 
 const userSchema= new mongoose.Schema({
     name:{
         type:String,
@@ -12,8 +14,8 @@ const userSchema= new mongoose.Schema({
         required:true
     },
     referral:{
-        type:String,
-        required:true
+        type:String 
+       
     },
     city:{
         type:String,
@@ -35,6 +37,10 @@ const userSchema= new mongoose.Schema({
         type:String,
         required:true
     },
+    mobileNumber:{
+        type:String,
+        required:true
+    },
     tokens:[
         {
             token:{
@@ -42,7 +48,39 @@ const userSchema= new mongoose.Schema({
                 required:true  
             }
         }
-    ]
+    ],
+    instagram:{
+        type:String 
+    },
+    youtube:{
+        type:String 
+       
+    },
+    blog:{
+        type:String 
+       
+    },
+    Genre:{
+        
+        beauty:String,
+        fashion:String,
+        tech:String,
+        lifestyle:String,
+        food:String,
+        travel:String,
+        fitness:String,
+        wedding:String,
+        entertainment:String,
+        decor:String,
+        parenting:String,
+        photography :String,
+        design: String, 
+        culture: String,
+        sports: String,
+        luxury: String,
+        repost: String,
+        diy: String
+    }
 })
 
 userSchema.pre('save',async function(next){

@@ -1,4 +1,4 @@
-import React,{useState  }from 'react'
+import React,{useState ,useEffect }from 'react'
 import './Sign.css'
 import {  useNavigate} from 'react-router-dom'
 import logosign from './components/image/png-logo.png'
@@ -12,8 +12,33 @@ const [user, setuser] = useState({
   city:"",
   dob:"",
   gender:"",
- password:"",
- cpassword:""
+  password:"",
+  cpassword:"",
+  mobileNumber:"",
+  Genre:{
+    beauty:"",
+    fashion:"",
+    tech:"",
+    lifestyle:"",
+    food:"",
+    travel:"",
+    fitness:"",
+    wedding:"",
+    entertainment:"",
+    decor:"",
+    parenting:"",
+    photography:"",
+    design:"",
+    culture:"",
+    sports:"",
+    luxury:"",
+    repost:"",
+    diy:""
+  },
+  instagram:"",
+  youtube:"",
+  blog:""
+
 })
 let nm, val;
 const handlechange=(e)=>{
@@ -27,67 +52,35 @@ const handlechange=(e)=>{
    
 }
 
-const signinData = async(event) => {
-    event.preventDefault();
-    const {
-    name,
-    email,
-    referral,
-    city,
-    dob,
-    gender,
-    password,
-    cpassword
-    } = user ;
-   const res =  await fetch(
-      "/register",{
-        method: "POST",
-        headers:{
-          "Content-Type": "application/json",
-        },
-        body:JSON.stringify({
-            name,
-            email,
-            referral,
-            city,
-            dob,
-            gender,
-            password,
-            cpassword
-        }),
-      }
-      );
-      const data = await res.json()
-      console.log(res.status)
-      if(res.status === 422 || !data) {
-        window.alert(JSON.parse(JSON.stringify(data)).error  )
-      }else  {
-        window.alert(JSON.parse(JSON.stringify(data)).message  )
-        navigate('/')
-      }
-  };
+
+  
+ useEffect(() => {
+      localStorage.setItem("userData", JSON.stringify(user)) 
+       
+ }, [user])
+ 
 
   return (
     <div className='sign-wrapper'>
           <div className="signup-logo-cont"><img className='signup-logo' src={logosign} alt="" /></div>  
         <div className="signup-form-cont">
-            <form onSubmit={signinData}  className='sign-up-form'  >
-                <input onChange={handlechange} type="text"  name='name' placeholder='Full Name' required />
-                <input onChange={handlechange} type="email" name='email' placeholder='Email' required />
-                <input onChange={handlechange} type="password" name='referral' placeholder='Referral code' required />
-                <input onChange={handlechange} type="text" name="city" id="city" placeholder='Current City'  />
-                <input onChange={handlechange} type="date" name="dob" id="dob" placeholder='Date of Birth' required />
-                <input onChange={handlechange} type="gender" name='gender' placeholder='Gender' required />
-                <input onChange={handlechange} type="password" name='password' placeholder='password' required /> 
-                <input onChange={handlechange} type="password" name='cpassword' placeholder='confirm password' required /> 
+            <form className='sign-up-form'  >
+                <input onChange={handlechange} value={user.name} type="text"  name='name' placeholder='Full Name' required />
+                <input onChange={handlechange} value={user.email} type="email" name='email' placeholder='Email' required />
+                <input onChange={handlechange} value={user.referral} type="password" name='referral' placeholder='Referral code'  />
+                <input onChange={handlechange} value={user.city} type="text" name="city" id="city" placeholder='Current City'  />
+                <input onChange={handlechange} value={user.dob} type="date" name="dob" id="dob" placeholder='Date of Birth' required />
+                <input onChange={handlechange} value={user.gender} type="gender" name='gender' placeholder='Gender' required />
+                <input onChange={handlechange} value={user.password} type="password" name='password' placeholder='password' required /> 
+                <input onChange={handlechange} value={user.cpassword} type="password" name='cpassword' placeholder='confirm password' required /> 
                  <div>
-                <button className='next-button' type="submit">Next</button>
+                {/* <button className='next-button' value={user.Genre} type="submit">Next</button> */}
                 </div>
                 <div className="line-break">
 
                 </div>
-
-
+ 
+                 
             </form>
                 <button className='already-have-account'> Already Have An Account?</button>
         </div>
@@ -95,4 +88,4 @@ const signinData = async(event) => {
   )
 }
 
-export default Sign
+export default Sign 

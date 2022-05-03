@@ -2,7 +2,8 @@ import React,{useState} from 'react'
 import logosign from './image/png-logo.png'
 import './Common.css'
 const Influence = () => {
-
+  console.log(JSON.parse(localStorage.getItem('userData')))
+  const [userData, setuserData] = useState(JSON.parse(localStorage.getItem('userData')))
   const [user, setuser] = useState({
     beauty:"",
     fashion:"",
@@ -32,7 +33,10 @@ const Influence = () => {
           ...user ,[nm]:val
        })
       
-     
+       setuserData({
+         ...userData,  Genre: {...user}
+       })
+       localStorage.setItem("userData",JSON.stringify(userData))
   }
   return (
     <div className="influence-wrapper">
