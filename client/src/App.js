@@ -19,6 +19,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Influencermarketing from './components/Influencermarketing/Influencermarketing';
 import Login from './Login.js';
 import Sign from './Sign';
+import Form from './components/Form';
 
 function App() {  
   return (
@@ -41,7 +42,7 @@ function App() {
             <Route path='/b2c' element={<B2c/>} />
             <Route path='/marketing' element={<Influencermarketing/>} />
              <Route path='/loginpage' element={<Login/>}/>
-             <Route path='/signup' element={<Sign/>}/>
+             <Route path='/signup' element={<Form/>}/>
             </Routes>
         <LetsTalk/>
         <Footer/>
