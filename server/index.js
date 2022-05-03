@@ -14,7 +14,7 @@ mongoose.connect(DB).then( ()=>{
     console.log('fullfiled') 
 }) 
 .catch((err)=>{
-    console.log('no connect')
+    console.log('no connect')   
 })
 const middleware =(req,res,next)=>{
     console.log('this is middleware')
@@ -23,7 +23,7 @@ const middleware =(req,res,next)=>{
 
  
  
-app.get('/',middleware,(req,res) => {
+app.get('/',middleware,(req,res) => { 
     console.log('middleware work successfully')
     res.send('hello world from the server');
 })
