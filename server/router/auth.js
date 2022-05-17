@@ -43,12 +43,14 @@ router.post("/register", async (req, res) => {
     blog
   } = req.body;
 
+console.log(travel);
+console.log(culture);
+
   if (
     !name ||
     !email ||
     !password ||
     !cpassword ||
-    !referral ||
     !city ||
     !dob ||
     !gender ||
@@ -78,6 +80,7 @@ router.post("/register", async (req, res) => {
       error: "something missing",
     });
   }
+
   try {
     let userExist = await User.findOne({ email: email });
     if (userExist) {
@@ -107,6 +110,7 @@ router.post("/register", async (req, res) => {
           food,
           travel,
           fitness,
+
           wedding,
           entertainment,
           decor,
@@ -130,4 +134,9 @@ router.post("/register", async (req, res) => {
   }
 });
 
+router.patch("/register", async (req,res)=>{
+
+  
+
+})
 module.exports = router;

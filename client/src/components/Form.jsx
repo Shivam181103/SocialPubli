@@ -29,7 +29,7 @@ const Form = () => {
         
         const userData = JSON.parse(localStorage.getItem("userData"))
 
-        event.preventDefault();
+        // event.preventDefault();
         const {
             name,
             email,
