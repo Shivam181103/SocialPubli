@@ -1,0 +1,107 @@
+.bank-main-cont{
+    padding: 2% 2%;
+    background-color: rgb(238,238,238);
+}
+
+.bank-personal{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.bank-personal-icon{
+    margin-bottom: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+.bank-first-main-cont>input[type=text]{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    line-height: 2rem;
+}
+
+.bank-first-main-cont>input[type=checkbox]{
+    margin-right: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.bank-first-main-cont label{
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+.bank-first-main-cont>input[name=address]{
+    line-height: 3rem;
+}
+
+
+/* bank-second-main-cont */
+
+.bank-second-main-cont{
+    padding: 1% 0;
+}
+
+.bank-second-main-cont>hr{
+    /* color:  solid black; */
+    /* height: 1px; */
+    border: 1px solid black;
+}
+
+.bank-col-first{
+    padding: 2%;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#accountype{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.2rem 0;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.verify{
+    padding-bottom: 0.6rem;
+}
+
+.fa-asterisk{
+    color: red;
+    font-size: 0.8rem;
+}
+
+#identityype{
+    border: solid black 1px;
+    padding: 0.3rem ;
+    font-weight: 600;
+}
+
+#myFile{
+    width: 100%;
+    padding: 1rem  0;
+}
+
+input[type=submit]{
+    margin-top: 0.5rem;
+    background-color:black;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type=submit]:hover{
+background-color: rgb(251, 149, 24);
+}
+
+.bank-col-second{
+    padding: 2%;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.bank-col-third{
+    padding: 2%;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+

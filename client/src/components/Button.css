@@ -1,0 +1,31 @@
+.button-main-cont{
+    background-color: rgb(0,0,0);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.button-main-cont>button{
+    color: white;
+    border-color: rgb(244,147,32);
+    border-width: 2px;
+    font-size: 1.5rem;
+    width: 50%;
+    margin-bottom: 2%;
+    font-weight: 600;
+}
+
+.button-main-cont>button:hover{
+    background-color: rgb(244,147,32);
+    border-color:rgb(244,147,32) ;
+}
+
+@media screen and (max-width:414px) {
+.button-main-cont>button{
+    font-size: 1rem;
+    width:70%
+}
+}
